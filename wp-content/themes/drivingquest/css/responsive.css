@@ -1,0 +1,11 @@
+@media screen and (min-width: 992px) {
+
+}
+@media screen and (max-width: 991px) {
+    header {
+        background: url("../images/header-top-bg.svg") no-repeat left center;
+    }
+}
+@media screen and (max-width: 767px) {
+
+}

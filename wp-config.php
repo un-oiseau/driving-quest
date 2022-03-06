@@ -84,6 +84,7 @@ define( 'WP_DEBUG', false );
 // Access to web server
 define( 'FS_METHOD', 'direct' );
 
+
 /* Add any custom values between this line and the "stop editing" line. */
 
 
