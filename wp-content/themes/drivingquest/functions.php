@@ -1,39 +1,5 @@
 <?php
 
-// function load_stylesheets()
-// {
-//     wp_register_style('owl', get_template_directory_uri().'/css/owl.carousel.min.css', array(), 1, 'all');
-//     wp_enqueue_style('owl');
-
-//     wp_register_style('owl-theme', get_template_directory_uri().'/css/owl.theme.default.min.css', array(), 1, 'all');
-//     wp_enqueue_style('owl-theme');
-
-//     wp_register_style('styles', get_template_directory_uri().'/style.css', array(), 1, 'all');
-//     wp_enqueue_style('styles');
-
-//     wp_register_style('main', get_template_directory_uri().'/css/main.css', array(), 1, 'all');
-//     wp_enqueue_style('main');
-
-//     wp_register_style('main-responsive', get_template_directory_uri().'/css/main-responsive.css', array(), 1, 'all');
-//     wp_enqueue_style('main-responsive');
-
-//     wp_register_style('responsive', get_template_directory_uri().'/css/responsive.css', array(), 1, 'all');
-//     wp_enqueue_style('responsive');
-// }
-
-// function load_js()
-// {
-//     wp_register_script('jquery', get_template_directory_uri().'/js/jquery-3.5.1.min.js', array(), 1, 1, 1);
-//     wp_enqueue_script('jquery');
-
-//     wp_register_script('owl', get_template_directory_uri().'/js/owl.carousel.min.js', array(), 1, 1, 1);
-//     wp_enqueue_script('owl');
-
-//     wp_register_script('custom', get_template_directory_uri().'/js/custom.js', array(), 1, 1, 1);
-//     wp_enqueue_script('custom');
-// }
-
-
 // Load CSS
 
 function load_css() {
@@ -80,67 +46,7 @@ register_nav_menus(
  * Register our sidebars and widgetized areas.
  *
  */
-function footer_widgets_init() {
 
-  register_sidebar( array(
-		'name'          => 'Footer Logo',
-		'id'            => 'footer_logo',
-		'before_widget' => '',
-		'after_widget'  => '',
-		'before_title'  => '',
-		'after_title'   => '',
-	) );
-    register_sidebar( array(
-		'name'          => 'Footer Logos',
-		'id'            => 'footer_logos',
-		'before_widget' => '',
-		'after_widget'  => '',
-		'before_title'  => '',
-		'after_title'   => '',
-	) );
-    register_sidebar( array(
-		'name'          => 'Footer Links-1',
-		'id'            => 'footer_links_1',
-		'before_widget' => '',
-		'after_widget'  => '',
-		'before_title'  => '',
-		'after_title'   => '',
-	) );
-    register_sidebar( array(
-		'name'          => 'Footer Links-2',
-		'id'            => 'footer_links_2',
-		'before_widget' => '',
-		'after_widget'  => '',
-		'before_title'  => '',
-		'after_title'   => '',
-	) );
-    register_sidebar( array(
-		'name'          => 'Footer Links-3',
-		'id'            => 'footer_links_3',
-		'before_widget' => '',
-		'after_widget'  => '',
-		'before_title'  => '',
-		'after_title'   => '',
-	) );
-    register_sidebar( array(
-		'name'          => 'Footer Links-4',
-		'id'            => 'footer_links_4',
-		'before_widget' => '',
-		'after_widget'  => '',
-		'before_title'  => '',
-		'after_title'   => '',
-	) );
-    register_sidebar( array(
-		'name'          => 'Footer Text',
-		'id'            => 'footer_text',
-		'before_widget' => '',
-		'after_widget'  => '',
-		'before_title'  => '',
-		'after_title'   => '',
-	) );
-  
-}
-add_action( 'widgets_init', 'footer_widgets_init' );
 
 add_theme_support( 'title-tag' );
 
