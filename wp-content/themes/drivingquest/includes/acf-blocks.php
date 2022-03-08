@@ -56,7 +56,7 @@ function ocs_acf_init_block_types() {
         acf_register_block_type(array(
             'name'              => 'submit-request',
             'title'             => __('Submit Request'),
-            'render_template'   => 'includes/acf-blocks/important-submit-request.php',
+            'render_template'   => 'includes/acf-blocks/submit-request.php',
             'category'          => 'formatting',
             'keywords'          => array( 'Submit Request' ),
         ));
