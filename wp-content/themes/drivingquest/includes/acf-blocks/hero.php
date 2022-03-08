@@ -10,8 +10,8 @@ $elements = get_field('header_icon_elements');
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <h1><?php get_field('title');?></h1>
-                <p><?php get_field('text');?></p>
+                <h1><?php echo get_field('title');?></h1>
+                <p><?php echo get_field('text');?></p>
                 <?php $button = get_field('button'); ?>
                 <div class="">
                     <?php if ($button) : ?>
