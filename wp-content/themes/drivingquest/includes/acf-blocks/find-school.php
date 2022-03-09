@@ -1,5 +1,5 @@
 <?php
-$classname = "ed-programs text-white";
+$classname = "find-school text-white";
 if (!empty($block['className'])) {
     $classname .= ' ' . $block['className'];
 }

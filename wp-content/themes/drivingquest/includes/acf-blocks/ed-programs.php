@@ -16,7 +16,7 @@ $single = get_field('how_it_works');
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-body">
-                        <div class="w-100">
+                        <div class="w-100 text-center">
                             <?php $photo = $program['photo'] ;?>
                                 <?php if ($photo) :  ?>
                                     <img src="<?php echo $photo['url']; ?>" alt="<?php echo $photo['alt']; ?>" title="<?php echo $photo['title']; ?>">
