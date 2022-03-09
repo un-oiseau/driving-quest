@@ -83,3 +83,16 @@ header .header-logo {
     padding: 15px 0 20px;
     min-height: auto;
 }
+
+/* Students Reviews */
+
+.star {
+    background: url(../images/star-yellow-big.svg) 100% / 100% no-repeat;
+    width: 18px;
+    height: 18px;
+    margin-right: 3px;
+    display: inline-block;
+}
+.star.empty {
+    opacity: .5;
+}
