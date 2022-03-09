@@ -34,13 +34,6 @@ function load_js() {
 
 add_action('wp_enqueue_scripts', 'load_js');
 
-register_nav_menus(
-    array(
-        'primary' => esc_html__( 'Primary menu', 'casino_theme' ),
-        'footer'  => __( 'Secondary menu', 'casino_theme' ),
-        'footer_bottom'  => __( 'Privacy menu', 'casino_theme' ),
-    )
-);
 
 /**
  * Register our sidebars and widgetized areas.
@@ -119,4 +112,4 @@ function gb_gutenberg_admin_styles() {
 }
 add_action('admin_head', 'gb_gutenberg_admin_styles');
 
-show_admin_bar(false);
+show_admin_bar(true);
