@@ -1,5 +1,5 @@
 <?php
-$classname = "student-reviews text-center";
+$classname = "ed-programs";
 if (!empty($block['className'])) {
     $classname .= ' ' . $block['className'];
 }
