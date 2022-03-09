@@ -5,6 +5,10 @@
     header {
         background: url("../images/header-top-bg.svg") no-repeat left center;
     }
+
+    .find-form .row {
+        gap: 0;
+    }
 }
 @media screen and (max-width: 767px) {
 

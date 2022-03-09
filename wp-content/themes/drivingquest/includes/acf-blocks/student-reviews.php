@@ -12,7 +12,7 @@ $rev_block = get_field('review_block');
     </div>
     <div class="row">
         <?php foreach ($rev_block  as $reviews): $review = $reviews['review_item']; ?>
-        <div class="col-md-4">
+        <div class="col-lg-4">
             <div class="card">
                 <div class="card-body">
                     <div class="d-flex justify-content-start">

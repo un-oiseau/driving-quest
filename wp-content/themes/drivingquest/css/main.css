@@ -25,7 +25,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Manrope Regular', sans-serif;
     line-height: 27px;
     color:#E8EDF3;
 }
@@ -36,25 +36,26 @@ img {
 ul {
     list-style: none;
 }
-li {
+li {, sans-serif
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
 }
 p {
-    font-family: "Manrope SemiBold";
+    font-family: "Manrope SemiBold", sans-serif;
     font-size: 18px;
     font-weight: 600;
-    line-height: 35px;
+    line-height: 32px;
+    color: #7780A6;
 }
 h1, h2, h3, h4, h5, h6 {
-
+    color: #222447;
 }
 h3, h4, h5, h6 {
 
 }
-h1, .h1 {
-    font-family: "Manrope ExtraBold";
+h1 {
+    font-family: 'Manrope ExtraBold', sans-serif;
     font-size: 45px;
     font-weight: 800;
     line-height: 66px;
@@ -108,4 +109,45 @@ header .header-logo {
 }
 .star-sm.empty {
     opacity: .5;
+}
+
+/* Find Place */
+
+.find-place {
+    background: #1E2DA8;
+    box-shadow: 0px 16px 29px rgba(59, 99, 128, 0.35);
+    border-radius: 35px;
+    padding: 56px 140px 47px;
+}
+
+.find-place h2,
+.find-place p {
+    color: #ffffff;
+}
+.find-form .row{
+    gap: 80px;
+}
+
+.find-form label {
+    font-family: "Manrope Medium", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.find-form .nf-form-content label {
+    color: #7780A6;
+}
+
+.find-form .nf-form-content select.ninja-forms-field {
+    color: #ffffff;
+}
+
+.find-form .nf-field-element {
+    border: none;
+}
+
+.find-form .nf-form-content .list-select-wrap>div select {
+    background: #0D1C93;
+    border-radius: 8px;
 }
