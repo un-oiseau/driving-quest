@@ -21,5 +21,7 @@ if (!empty($block['className'])) {
             $link = $video['video_link'];
             if( $link ): ?>
                 <a class="btn" href="<?php echo esc_url( $link ); ?>"></a>
+                
             <?php endif; ?>
+            
     </div>
