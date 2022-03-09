@@ -59,19 +59,19 @@ h1, .h1 {
     font-weight: 800;
     line-height: 66px;
 }
-h2, .h2 {
+h2 {
 
 }
-h3, .h3 {
+h3 {
 
 }
-h4, .h4 {
+h4 {
 
 }
-h5, .h5 {
+h5 {
 
 }
-h6, .h6 {
+h6 {
 
 }
 
@@ -88,11 +88,24 @@ header .header-logo {
 
 .star {
     background: url(../images/star-yellow-big.svg) 100% / 100% no-repeat;
-    width: 18px;
-    height: 18px;
-    margin-right: 3px;
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
     display: inline-block;
 }
 .star.empty {
+    opacity: .5;
+}
+
+/* Ed Programs */
+
+.star-sm {
+    background: url(../images/star-yellow-small.svg) 100% / 100% no-repeat;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    display: inline-block;
+}
+.star-sm.empty {
     opacity: .5;
 }
