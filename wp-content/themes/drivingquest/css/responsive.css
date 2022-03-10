@@ -9,6 +9,12 @@
     .find-form .row {
         gap: 0;
     }
+
+    .student-reviews .card,
+    .ed-programs .card {
+        margin-bottom: 40px;
+    }
+
 }
 @media screen and (max-width: 767px) {
 

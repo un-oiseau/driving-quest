@@ -1,5 +1,5 @@
 <?php
-$classname = "submit-request";
+$classname = "container submit-request";
 if (!empty($block['className'])) {
     $classname .= ' ' . $block['className'];
 }

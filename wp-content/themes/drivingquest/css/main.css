@@ -36,7 +36,7 @@ img {
 ul {
     list-style: none;
 }
-li {, sans-serif
+li {
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -51,9 +51,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
     color: #222447;
 }
-h3, h4, h5, h6 {
 
-}
 h1 {
     font-family: 'Manrope ExtraBold', sans-serif;
     font-size: 45px;
@@ -61,23 +59,46 @@ h1 {
     line-height: 66px;
 }
 h2 {
-
+    font-family: 'Manrope ExtraBold', sans-serif;
+    font-size: 45px;
+    line-height: 58px;
+    text-align: center;
+    font-weight: 800;
+    color: #222447;
+    padding-bottom: 70px;
+    font-weight: 800;
 }
-h3 {
 
+h3 {
+    font-family: 'Manrope Bold', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    color: #222447;
 }
 h4 {
-
+    font-family: 'Manrope Bold', sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+    color: #222447;
 }
+
 h5 {
-
+    font-family: 'Manrope Bold', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 35px;
+    color: #222447;
 }
-h6 {
 
+section {
+    margin: 50px 0;
 }
 
 header {
     background: url("../images/header-top-bg.svg") no-repeat center;
+    background-size: cover;
     min-height: 93px;
 }
 header .header-logo {
@@ -96,7 +117,7 @@ header .header-logo {
     background: linear-gradient(4.2deg, #1E2DA8 8.85%, #3C80E6 93.5%);
     border-radius: 34px;
     border: none;
-    padding: 10px 70px 10px 30px;
+    padding: 17px 70px 17px 30px;
     color: #ffffff;
 }
 
@@ -118,10 +139,8 @@ header .header-logo {
 
 .hero-img {
     background: url(../images/header-bg.svg) no-repeat;
-    background-position: center top;
+    background-position: center bottom;
     position: relative;
-    height: 361px;
-    width: 454px;
 }
 
 .play-img {
@@ -153,9 +172,43 @@ header .header-logo {
 
 .el-1 {
     position: absolute;
+    top: 24%;
+    right: 41%;
+}
+.el-3 {
+    position: absolute;
+    right: 46%;
+    top: 55%;
+}
+.el-4 {
+    position: absolute;
     top: 26%;
-    right: 45%;
+    right: 20%;
+    z-index: -3;
+}
 
+.el-5 {
+    position: absolute;
+    top: 42%;
+    right: 18%;
+}
+
+.el-6 {
+    position: absolute;
+    top: 35%;
+    right: 18%;
+}
+
+.el-7 {
+    position: absolute;
+    top: 55%;
+    right: 17%;
+}
+
+.el-8 {
+    position: absolute;
+    right: 20%;
+    top: 60%;
 }
 
 .cards {
@@ -169,22 +222,41 @@ header .header-logo {
     width: 150px;
     padding: 0 0 17px 0;
     position: absolute;
-    right: 0;
-    top: 0;
+    z-index: 10;
 }
 
-.license h5 {
+.skills {
+    left: 100%;
+    top: 20%;
+}
+.license {
+    right: 20%;
+    top: 0;
+}
+.license h5,
+.skills h5 {
     font-size: 12px;
     font-weight: 800;
     line-height: 20px;
     letter-spacing: 0.15em;
-    text-transform: uppercase;
-    background: #1E2DA8;
     border-radius: 15px 15px 0px 0px;
-    color: #FFFFFF;
 }
 
-.license h5 span {
+.license h5 {
+    background: #1E2DA8;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.skills h5 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 35px;
+    color: #222447;
+}
+
+.license h5 span,
+.skills h5 span {
     padding: 3px 16px 7px;
     display: block;
 }
@@ -204,6 +276,42 @@ header .header-logo {
 }
 .star.empty {
     opacity: .5;
+}
+
+.student-reviews .card {
+    background: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 29px rgba(59, 99, 128, 0.2);
+    border-radius: 35px;
+    min-height: 370px;
+}
+.student-reviews .card-body {
+    padding: 38px 48px 40px;
+}
+
+.student-reviews .card-title {
+    font-family: 'Manrope Bold', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;
+    color: #222447;
+}
+
+.student-reviews .card-text {
+    font-family: 'Manrope SemiBold', sans-serif;
+    font-size: 18px;
+    line-height: 35px;
+    color: #7780A6;
+}
+
+.insta-link {
+    font-family: 'Manrope Medium', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+    color: #7780A6;
+    text-decoration: none;
 }
 
 /* Ed Programs */
@@ -266,4 +374,44 @@ h2.new {
     line-height: 66px;
     letter-spacing: 0.1em;
     color: #FE8335;
+}
+
+/* Ed Programs */
+
+.ed-programs {
+    background: linear-gradient(180deg, #F4F5F8 0%, rgba(244, 245, 248, 0) 100%);
+}
+
+.ed-programs h2 {
+    padding-top: 100px;
+    padding-bottom: 5px;
+}
+
+.ed-programs h3 {
+    padding-bottom: 30px;
+}
+
+.ed-programs .card {
+    background: #FFFFFF;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 29px rgba(59, 99, 128, 0.2);
+    border-radius: 35px;
+}
+
+.card-cap {
+    border-radius: 35px 35px 0px 0px;
+    width: 100%;
+}
+
+.card-1 .card-cap {
+    background: linear-gradient(180deg, #FE8335 0%, #FA593B 100%);
+}
+
+.card-2 .card-cap {
+    background: linear-gradient(271.59deg, #5393F3 -3.28%, #78C6FF 99.96%);
+}
+
+.card-3 .card-cap {
+    background: linear-gradient(271.59deg, #53D8B0 -3.28%, #B3DE7D 99.96%);
 }

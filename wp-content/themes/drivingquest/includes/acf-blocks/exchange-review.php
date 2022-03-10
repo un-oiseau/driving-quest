@@ -1,5 +1,5 @@
 <?php
-$classname = "exchange-review";
+$classname = "container exchange-review";
 if (!empty($block['className'])) {
     $classname .= ' ' . $block['className'];
 }

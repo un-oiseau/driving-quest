@@ -1,5 +1,5 @@
 <?php
-$classname = "hero";
+$classname = "container hero";
 if (!empty($block['className'])) {
     $classname .= ' ' . $block['className'];
 }
@@ -8,10 +8,11 @@ $video = get_field('video_button');
 
 <div class="<?php echo esc_attr($classname) ?>">
     <div class="container">
-        <div class="row align-items-center justify-content-end">
-            <div class="col-6 cards">
+        <div class="row align-items-center">
+            <div class="col-lg-6 cards">
                 <h2 class="new"><?php echo get_field('title_top');?></h2>
-                <h1 class="pb-3"><?php echo get_field('title');?></h1>
+                <h1 class=""><?php echo get_field('title_middle');?></h1>
+                <h1 class="pb-3"><?php echo get_field('title_bottom');?></h1>
                 <p><?php echo get_field('text');?></p>
                 <?php $button = get_field('button'); ?>
                 <div class="row align-items-center pt-4">
@@ -49,16 +50,18 @@ $video = get_field('video_button');
                 </div>
                 <div class="skills">
                     <?php $skills = get_field('skills'); ?>
-                        <h5><?php echo $skills['skills_heading'];?></h5>
+                        <h5><span><?php echo $skills['skills_heading'];?></span></h5>
                     <?php $skills_img = $skills['skills_bar'];
                     if( !empty( $skills_img ) ): ?>
+                    <div class="skills-body text-center">
                         <img src="<?php echo $skills_img['url']; ?>" alt="<?php echo $skills_img['alt']; ?>" title="<?php echo $skills_img['title']; ?>">
-                    <?php endif; ?>
+                        <?php endif; ?>
+                    </div> 
                 </div>
             </div>   
         </div>
-        <div class="col-6">
-                <div class="hero-img">
+        <div class="col-lg-6">
+                <div class="hero-img d-flex justify-content-center">
                 <?php 
                 $hero_image = get_field('header_image');
                 if( !empty( $hero_image ) ): ?>

@@ -3,7 +3,7 @@ $classname = "ed-programs";
 if (!empty($block['className'])) {
     $classname .= ' ' . $block['className'];
 }
-$programs = get_field('programs');
+
 $single = get_field('how_it_works');
 ?>
 
@@ -12,25 +12,25 @@ $single = get_field('how_it_works');
         <h2><?php echo get_field('title');?></h2>
         <h3><?php echo get_field('subtitle');?></h3>
         <div class="row">
-            <?php foreach ($programs  as $item): $program = $item['program']; ?>
             <div class="col-md-4">
-                <div class="card">
+                <div class="card card-1">
+                    <div class="card-cap w-100 text-center">
+                        <?php $program1 = get_field('program_1');?>
+                        <?php $photo1 = $program1['photo'] ;?>
+                        <?php if ($photo1) :  ?>
+                            <img src="<?php echo $photo1['url']; ?>" alt="<?php echo $photo1['alt']; ?>" title="<?php echo $photo1['title']; ?>">
+                        <?php endif; ?>
+                    </div>
                     <div class="card-body">
-                        <div class="w-100 text-center">
-                            <?php $photo = $program['photo'] ;?>
-                                <?php if ($photo) :  ?>
-                                    <img src="<?php echo $photo['url']; ?>" alt="<?php echo $photo['alt']; ?>" title="<?php echo $photo['title']; ?>">
-                                <?php endif; ?>
-                        </div>
-                        <h5 class="card-title"><?php echo $program['program_title']; ?></h5>
-                        <p class="card-text"><?php echo $program['description']; ?></p>
+                        <h5 class="card-title"><?php echo $program1['program_title']; ?></h5>
+                        <p class="card-text"><?php echo $program1['description']; ?></p>
                         <div class="mb-1">
-                            <?php $stars_sm = $program['rating']; ?>
+                            <?php $stars_sm1 = $program1['rating']; ?>
                             <div class="stars-sm">
-                                <?php for ($i=0; $i<$stars_sm; $i++) { ?>
+                                <?php for ($i=0; $i<$stars_sm1; $i++) { ?>
                                     <span class="star-sm"></span>
                                 <?php } ?>
-                                <?php for ($i=0; $i<5-$stars_sm; $i++) { ?>
+                                <?php for ($i=0; $i<5-$stars_sm1; $i++) { ?>
                                     <span class="star-sm empty"></span>
                                 <?php } ?>
                             </div>
@@ -38,7 +38,59 @@ $single = get_field('how_it_works');
                     </div>
                 </div>
             </div>
-            <?php endforeach?>
+            <div class="col-md-4">
+                <div class="card card-2">
+                    <div class="card-cap w-100 text-center">
+                        <?php $program2 = get_field('program_2');?>
+                        <?php $photo2 = $program2['photo'] ;?>
+                        <?php if ($photo2) :  ?>
+                            <img src="<?php echo $photo2['url']; ?>" alt="<?php echo $photo2['alt']; ?>" title="<?php echo $photo2['title']; ?>">
+                        <?php endif; ?>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><?php echo $program2['program_title']; ?></h5>
+                        <p class="card-text"><?php echo $program2['description']; ?></p>
+                        <div class="mb-1">
+                            <?php $stars_sm2 = $program2['rating']; ?>
+                            <div class="stars-sm">
+                                <?php for ($i=0; $i<$stars_sm2; $i++) { ?>
+                                    <span class="star-sm"></span>
+                                <?php } ?>
+                                <?php for ($i=0; $i<5-$stars_sm2; $i++) { ?>
+                                    <span class="star-sm empty"></span>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card card-3">
+                    <div class="card-cap w-100 text-center">
+                        <?php $program3 = get_field('program_3');?>
+                        <?php $photo3 = $program3['photo'] ;?>
+                        <?php if ($photo3) :  ?>
+                            <img src="<?php echo $photo3['url']; ?>" alt="<?php echo $photo3['alt']; ?>" title="<?php echo $photo3['title']; ?>">
+                        <?php endif; ?>
+                        </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><?php echo $program3['program_title']; ?></h5>
+                        <p class="card-text"><?php echo $program3['description']; ?></p>
+                        <div class="mb-1">
+                            <?php $stars_sm3 = $program3['rating']; ?>
+                            <div class="stars-sm">
+                                <?php for ($i=0; $i<$stars_sm3; $i++) { ?>
+                                    <span class="star-sm"></span>
+                                <?php } ?>
+                                <?php for ($i=0; $i<5-$stars_sm3; $i++) { ?>
+                                    <span class="star-sm empty"></span>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="green-arrow">
             <?php $arrow = get_field('arrow'); ?>
