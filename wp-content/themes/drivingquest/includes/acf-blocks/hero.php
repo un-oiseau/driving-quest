@@ -3,40 +3,48 @@ $classname = "hero";
 if (!empty($block['className'])) {
     $classname .= ' ' . $block['className'];
 }
-$elements = get_field('header_icon_elements');
+$video = get_field('video_button');
 ?>
 
 <div class="<?php echo esc_attr($classname) ?>">
     <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <h1><?php echo get_field('title');?></h1>
+        <div class="row align-items-center justify-content-end">
+            <div class="col-6 cards">
+                <h2 class="new"><?php echo get_field('title_top');?></h2>
+                <h1 class="pb-3"><?php echo get_field('title');?></h1>
                 <p><?php echo get_field('text');?></p>
                 <?php $button = get_field('button'); ?>
-                <div class="">
-                    <?php if ($button) : ?>
-                        <button type="button" class="btn btn-block" onclick="window.location='<?php echo $button['url']; ?>';"><?php echo $button['title']; ?></button>
-                    <?php endif; ?>
-                    <?php 
-                    $video = get_field('video_button');
-                    $vlink = $video['video_link'];
-                    if( $vlink ): ?>
-                        <button type="button" class="btn btn-block" onclick="window.location='<?php echo $vlink['url']; ?>';"><?php echo $vlink['title']; ?>
-                    <?php endif; ?>
+                <div class="row align-items-center pt-4">
+                    <div class="col-6">
+                        <?php if ($button) : ?>
+                            <button type="button" class="btn btn-block hero-btn" onclick="window.location='<?php echo $button['url']; ?>';"><?php echo $button['title']; ?></button>
+                        <?php endif; ?>
+                    </div>
+                    <div class="col-6">
+                        <?php $vlink = $video['video_link'];?>
+                        <?php if ($vlink) : ?>
+                            <button type="button" class="btn btn-block play-btn d-flex align-items-center" onclick="window.location='<?php echo $vlink['url']; ?>';">
+                        <?php endif; ?>
                     <?php
                         $vimage = $video['video_button_image'];
                         if( !empty( $vimage ) ): ?>
-                            <img src="<?php echo $vimage['url']; ?>" alt="<?php echo $vimage['alt']; ?>" title="<?php echo $vimage['title']; ?>"> 
-                        <?php endif; ?>
-                    </button>
-                    <p><?php echo $vimage['title'];?></p>
-                </div>
+                        <span class="play-img">
+                            <img src="<?php echo $vimage['url']; ?>" alt="<?php echo $vimage['alt']; ?>" > 
+                            <?php endif; ?>
+                        </span>
+                        <?php echo $vlink['title']; ?>
+                        </button>
+                    </div>
+                <div>
+            </div>
                 <div class="license">
                     <?php $license = get_field('license'); ?>
-                    <h5><?php echo $license['license_heading'];?></h5>
+                    <h5><span><?php echo $license['license_heading'];?></span></h5>
                     <?php $license_img = $license['profile_image'];
                     if( !empty( $license_img ) ): ?>
+                    <div class="license-body">
                         <img src="<?php echo $license_img['url']; ?>" alt="<?php echo $license_img['alt']; ?>" title="<?php echo $license_img['title']; ?>">
+                    </div> 
                     <?php endif; ?>
                 </div>
                 <div class="skills">
@@ -47,8 +55,9 @@ $elements = get_field('header_icon_elements');
                         <img src="<?php echo $skills_img['url']; ?>" alt="<?php echo $skills_img['alt']; ?>" title="<?php echo $skills_img['title']; ?>">
                     <?php endif; ?>
                 </div>
-            </div>
-            <div class="col-6">
+            </div>   
+        </div>
+        <div class="col-6">
                 <div class="hero-img">
                 <?php 
                 $hero_image = get_field('header_image');
@@ -56,11 +65,38 @@ $elements = get_field('header_icon_elements');
                     <img src="<?php echo $hero_image['url']; ?>" alt="<?php echo $hero_image['alt']; ?>" title="<?php echo $hero_image['title']; ?>">
                 <?php endif; ?>
                 </div>
-                <?php foreach ($elements  as $e): $el = $e['image_element']; ?>
-                    <?php if ($el) :  ?>
-                        <img src="<?php echo $el['url']; ?>" alt="<?php echo $el['alt']; ?>" title="<?php echo $el['title']; ?>">
-                    <?php endif; ?>
-                <?php endforeach?>
-            </div>    
+                <?php $el1 = get_field('element_1');
+                if( !empty( $el1 ) ): ?>
+                    <img class="el-1" src="<?php echo $el1['url']; ?>" alt="<?php echo $el1['alt']; ?>" title="<?php echo $el1['title']; ?>">
+                <?php endif; ?>
+                <?php $el2 = get_field('element_2');
+                if( !empty( $el2 ) ): ?>
+                    <img class="el-2" src="<?php echo $el2['url']; ?>" alt="<?php echo $el2['alt']; ?>" title="<?php echo $el2['title']; ?>">
+                <?php endif; ?>
+                <?php $el3 = get_field('element_3');
+                if( !empty( $el3 ) ): ?>
+                    <img class="el-3" src="<?php echo $el3['url']; ?>" alt="<?php echo $el3['alt']; ?>" title="<?php echo $el3['title']; ?>">
+                <?php endif; ?>
+                <?php $el4 = get_field('element_4');
+                if( !empty( $el4 ) ): ?>
+                    <img class="el-4" src="<?php echo $el4['url']; ?>" alt="<?php echo $el4['alt']; ?>" title="<?php echo $el4['title']; ?>">
+                <?php endif; ?>
+                <?php $el5 = get_field('element_5');
+                if( !empty( $el5 ) ): ?>
+                    <img class="el-5" src="<?php echo $el5['url']; ?>" alt="<?php echo $el5['alt']; ?>" title="<?php echo $el5['title']; ?>">
+                <?php endif; ?>
+                <?php $el6 = get_field('element_6');
+                if( !empty( $el6 ) ): ?>
+                    <img class="el-6" src="<?php echo $el6['url']; ?>" alt="<?php echo $el6['alt']; ?>" title="<?php echo $el6['title']; ?>">
+                <?php endif; ?>
+                <?php $el7 = get_field('element_7');
+                if( !empty( $el7 ) ): ?>
+                    <img class="el-7" src="<?php echo $el7['url']; ?>" alt="<?php echo $el7['alt']; ?>" title="<?php echo $el7['title']; ?>">
+                <?php endif; ?>
+                <?php $el8 = get_field('element_8');
+                if( !empty( $el8 ) ): ?>
+                    <img class="el-8" src="<?php echo $el8['url']; ?>" alt="<?php echo $el8['alt']; ?>" title="<?php echo $el8['title']; ?>">
+                <?php endif; ?>
+            </div> 
         </div>
     </div>

@@ -85,6 +85,114 @@ header .header-logo {
     min-height: auto;
 }
 
+/* Hero */
+
+.hero {
+    margin-top: 43px;
+}
+
+.hero-btn {
+    position: relative;
+    background: linear-gradient(4.2deg, #1E2DA8 8.85%, #3C80E6 93.5%);
+    border-radius: 34px;
+    border: none;
+    padding: 10px 70px 10px 30px;
+    color: #ffffff;
+}
+
+.hero-btn:after {
+    content: url(../images/arrow-submit.svg);
+    position: absolute;
+    margin-left: 15px;
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+.hero-btn:hover {
+    color: #ffffff;
+    background: linear-gradient(4.2deg, #3C80E6 100%, #1E2DA8 8.85%);
+}
+.play-img {
+    display: block;
+}
+
+.hero-img {
+    background: url(../images/header-bg.svg) no-repeat;
+    background-position: center top;
+    position: relative;
+    height: 361px;
+    width: 454px;
+}
+
+.play-img {
+    background: linear-gradient(180deg, #FE8335 0%, #FA593B 100%);
+    border-radius: 50px;
+    border: none;
+    padding: 18px;
+    margin-right: 20px;
+}
+.play-img:hover {
+    background: linear-gradient(180deg, #FA593B 100% #FE8335 0%);
+}
+
+.play-img img{
+    width: 22px;
+    height: 22px;
+    display: block;
+}
+
+.play-btn,
+.play-btn:hover,
+.play-btn:visited,
+.play-btn:active,
+.play-btn:focus,
+.play-btn:focus-visible {
+    border: none !important;
+
+}
+
+.el-1 {
+    position: absolute;
+    top: 26%;
+    right: 45%;
+
+}
+
+.cards {
+    position: relative;
+}
+
+.license {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 29px rgba(59, 99, 128, 0.2);
+    border-radius: 15px;
+    width: 150px;
+    padding: 0 0 17px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.license h5 {
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 20px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background: #1E2DA8;
+    border-radius: 15px 15px 0px 0px;
+    color: #FFFFFF;
+}
+
+.license h5 span {
+    padding: 3px 16px 7px;
+    display: block;
+}
+
+.license-body {
+    padding: 0 30px;
+}
+
 /* Students Reviews */
 
 .star {
@@ -150,4 +258,12 @@ header .header-logo {
 .find-form .nf-form-content .list-select-wrap>div select {
     background: #0D1C93;
     border-radius: 8px;
+}
+
+h2.new {
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 66px;
+    letter-spacing: 0.1em;
+    color: #FE8335;
 }
