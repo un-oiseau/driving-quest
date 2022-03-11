@@ -1,5 +1,5 @@
 <?php
-$classname = "container enter-workforce";
+$classname = "enter-workforce";
 if (!empty($block['className'])) {
     $classname .= ' ' . $block['className'];
 }

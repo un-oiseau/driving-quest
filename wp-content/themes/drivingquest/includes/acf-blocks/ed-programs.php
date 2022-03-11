@@ -8,7 +8,7 @@ $single = get_field('how_it_works');
 ?>
 
 <div class="<?php echo esc_attr($classname) ?>">
-    <div class="container">
+    <div class="container-small">
         <h2><?php echo get_field('title');?></h2>
         <h3><?php echo get_field('subtitle');?></h3>
         <div class="row">
@@ -92,26 +92,31 @@ $single = get_field('how_it_works');
                 </div>
             </div>
         </div>
-        <div class="green-arrow">
+        </div>
+    </div>
+    <div class="container">
+    <div class="green-arrow">
             <?php $arrow = get_field('arrow'); ?>
                 <?php if ($arrow) :  ?>
                     <img src="<?php echo $arrow['url']; ?>" alt="<?php echo $arrow['alt']; ?>" title="<?php echo $arrow['title']; ?>">
                 <?php endif; ?>
         </div>
-            <div class="card">
+            <div class="display-card card">
                 <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="d-flex flex-column">
-                                <?php $photo = $single['course_image'] ;?>
+                    <div class="card-body-row row">
+                        <div class="col-lg-2 d-flex align-items-center justify-content-center">
+                            <div class="display-card-intro d-flex flex-column">
+                                <div class="display-card-intro-cap text-center">
+                                    <?php $photo = $single['course_image'] ;?>
                                     <?php if ($photo) :  ?>
                                         <img src="<?php echo $photo['url']; ?>" alt="<?php echo $photo['alt']; ?>" title="<?php echo $photo['title']; ?>">
                                     <?php endif; ?>
+                                </div>
                                 <h5><?php echo $single['course_name']; ?></h5>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <h3><?php echo $single['course_heading']; ?></h3>
+                        <div class="col-lg-5 display-card-block-middle">
+                            <h2><?php echo $single['course_heading']; ?></h2>
                             <?php $listing = $single['course_listing'];?>
                                 <?php foreach ($listing  as $list): $l_item = $list['list_item']; ?>
                                 <ul>
@@ -119,17 +124,16 @@ $single = get_field('how_it_works');
                                 </ul>
                                 <?php endforeach?>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-lg-5 display-card-block-last">
                             <h3><?php echo $single['tip_title']; ?></h3>
                             <?php $tips = $single['tip_list'];?>
-                                <?php foreach ($tips  as $t): $tip = $t['tip_list_item']; ?>
-                                <ul>
-                                    <li><?php echo $tip;?></li>
-                                </ul>
-                                <?php endforeach?>
+                            <?php foreach ($tips  as $t): $tip = $t['tip_list_item']; ?>
+                            <ul>
+                                <li><?php echo $tip;?></li>
+                            </ul>
+                            <?php endforeach?>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </div>

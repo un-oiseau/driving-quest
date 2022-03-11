@@ -1,5 +1,24 @@
-@media screen and (min-width: 992px) {
+@media (min-width: 1200px) {
 
+}
+
+@media (max-width: 1200px) {
+    .card-body-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-body-row > * {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container-small {
+        max-width: 910px;
+    }
 }
 @media screen and (max-width: 991px) {
     header {

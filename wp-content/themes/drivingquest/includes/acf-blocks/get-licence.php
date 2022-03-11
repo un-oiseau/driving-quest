@@ -18,14 +18,17 @@ $benefits = get_field('benefits_list');
                 </div>
             </div>
             <div class="col-md-6">
-                <h2><?php echo get_field('title');?></h2>
-                <p><?php echo get_field('text');?></p>
-                <h4><?php echo get_field('subtitle');?></h4>
-                <?php foreach ($benefits  as $b): $benefit = $b['benefit_item']; ?>
-                <ul>
-                    <li><?php echo $benefit;?></li>
-                </ul>
-                <?php endforeach?>
+                <div class="get-license-right">
+                    <h2><?php echo get_field('title_top');?></h2>
+                    <h2><?php echo get_field('title_bottom');?></h2>
+                    <p><?php echo get_field('text');?></p>
+                    <h4><?php echo get_field('subtitle');?></h4>
+                    <?php foreach ($benefits  as $b): $benefit = $b['benefit_item']; ?>
+                    <ul>
+                        <li><?php echo $benefit;?></li>
+                    </ul>
+                    <?php endforeach?>
+                </div>
             </div>
         </div>
     </div>
