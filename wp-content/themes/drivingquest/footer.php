@@ -18,22 +18,3 @@
 </body>
 </html>
 
-<div class="row">
-	<div class="col-md-6 col-sm-12">
-		<div class="form-group">
-		<label for="select">Country</label>
-		<select id="select" class="form-control">
-			<option>Disabled select</option>
-		</select>
-		</div>
-		<div class="form-group">
-		<label for="select">Campus</label>
-		<select id="select" class="form-control">
-			<option>Disabled select</option>
-		</select>
-		</div>
-	</div>
-	<div class="col-md-6 col-sm-12">
-		<p></p>
-	</div>
-</div>
