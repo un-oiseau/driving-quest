@@ -1,5 +1,5 @@
 <?php
-$classname = "container get-license";
+$classname = "get-license";
 if (!empty($block['className'])) {
     $classname .= ' ' . $block['className'];
 }

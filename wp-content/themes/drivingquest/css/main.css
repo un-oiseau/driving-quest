@@ -92,7 +92,7 @@ h5 {
     color: #222447;
 }
 
-section {
+section:not(:last-child) {
     margin: 50px 0;
 }
 
@@ -340,6 +340,15 @@ header .header-logo {
     opacity: .5;
 }
 
+
+
+.green-arrow {
+    position: absolute;
+    top: -35%;
+    z-index: 15;
+    left: 15px;
+}
+
 /* Find Place */
 
 .find-place {
@@ -349,11 +358,15 @@ header .header-logo {
     padding: 56px 140px 47px;
 }
 
+.find-place h2 {
+    padding-bottom: 45px;
+}
+
 .find-place h2,
 .find-place p {
     color: #ffffff;
 }
-.find-form .row{
+.find-form .row {
     gap: 80px;
 }
 
@@ -364,21 +377,27 @@ header .header-logo {
     line-height: 25px;
 }
 
-.find-form .nf-form-content label {
+.find-form .wpcf7 label {
     color: #7780A6;
 }
 
-.find-form .nf-form-content select.ninja-forms-field {
+.wpcf7-form-control-wrap select,
+.wpcf7-form-control-wrap select:focus,
+.wpcf7-form-control-wrap select:focus-visible,
+.wpcf7-form-control-wrap select:focus-within {
+    background: #0D1C93;
+    border-radius: 8px;
+    border: none !important;
     color: #ffffff;
 }
 
-.find-form .nf-field-element {
-    border: none;
+.find-form .form-control:focus {
+    border-color: #1E2DA8;
+    box-shadow: none; 
 }
 
-.find-form .nf-form-content .list-select-wrap>div select {
-    background: #0D1C93;
-    border-radius: 8px;
+.find-form .form-control {
+    padding: 0.7rem 0.8rem;
 }
 
 h2.new {
@@ -389,6 +408,16 @@ h2.new {
     color: #FE8335;
 }
 
+.house-img {
+    position: relative;
+}
+
+.house-img img {
+    position: absolute;
+    top: -125px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 /* Ed Programs */
 
 .ed-programs {
@@ -473,6 +502,7 @@ h2.new {
     box-shadow: 0px 4px 29px rgba(59, 99, 128, 0.2);
     border-radius: 35px;
     margin-top: 60px;
+    position: relative;
 }
 
 .display-card h2 {
@@ -540,6 +570,10 @@ h2.new {
     color: #FFFFFF;
     list-style-type: disc;
 }
+
+.get-license {
+    margin-bottom: 130px;
+}
 .get-license h2 {
     text-align: left;
 }
@@ -586,12 +620,11 @@ h2.new {
     text-align: center;
 }
 
-/* Find school */
-
 /* Enter workforce */
 
 .enter-workforce {
     background: #EDF4FF;
+    padding-top: 70px;
 }
 
 

@@ -6,7 +6,7 @@ if (!empty($block['className'])) {
 ?>
 
 <div class="<?php echo esc_attr($classname) ?>">
-    <div class="container">
+    <div class="container-small">
         <div class="row justify-content-center">
             <div class="col-lg-12">
                 <div class="find-place">
@@ -19,11 +19,10 @@ if (!empty($block['className'])) {
                     <h2 class="text-center"><?php echo get_field('form_title');?></h2>
                     <div class="find-form">
                         <div class="row align-items-center">
-                            <div class="col-lg-6">
-                                <?php $form = get_field('form');
-                                Ninja_Forms()->display($form->get_id(2));?>
+                            <div class="col-lg-5">
+                                <?php echo get_field( 'form' ); ?>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-5 pt-4">
                                 <?php echo get_field('selected_value_display');?>
                             </div>
                         </div>
@@ -32,4 +31,4 @@ if (!empty($block['className'])) {
             </div>
         </div> 
     </div>
-<div>
+</div>
