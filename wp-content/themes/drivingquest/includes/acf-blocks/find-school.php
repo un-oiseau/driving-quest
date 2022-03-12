@@ -1,12 +1,12 @@
 <?php
-$classname = "find-school text-white";
+$classname = "find-school container-small text-white";
 if (!empty($block['className'])) {
     $classname .= ' ' . $block['className'];
 }
 ?>
 
 <div class="<?php echo esc_attr($classname) ?>">
-    <div class="container-small">
+    <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-12">
                 <div class="find-place">
@@ -18,7 +18,7 @@ if (!empty($block['className'])) {
                     </div>
                     <h2 class="text-center"><?php echo get_field('form_title');?></h2>
                     <div class="find-form">
-                        <div class="row align-items-center">
+                        <div class="container row align-items-center">
                             <div class="col-lg-5">
                                 <?php echo get_field( 'form' ); ?>
                             </div>

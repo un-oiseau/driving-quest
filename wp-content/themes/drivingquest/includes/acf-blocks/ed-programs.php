@@ -8,7 +8,7 @@ $single = get_field('how_it_works');
 ?>
 
 <div class="<?php echo esc_attr($classname) ?>">
-    <div class="container-small">
+    <div class="container-small container-sm">
         <h2><?php echo get_field('title');?></h2>
         <h3><?php echo get_field('subtitle');?></h3>
         <div class="row">

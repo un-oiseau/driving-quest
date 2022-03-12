@@ -2,6 +2,17 @@
 
 }
 
+@media (max-width: 1400px) {
+
+    .student-reviews .card-top {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .student-reviews .card-top .card-img img {
+        width: 100%;
+    }
+}
 @media (max-width: 1200px) {
     .card-body-row {
         display: flex;
@@ -17,15 +28,14 @@
     .get-license .container .row {
         flex-direction: column;
         align-items: center;
-        
+    }
+}
+@media (max-width: 1200px) and (min-width: 992px) {
+    .student-reviews .card {
+        min-height: 531px;
     }
 }
 
-@media screen and (min-width: 992px) {
-    .container-small {
-        max-width: 910px;
-    }
-}
 @media screen and (max-width: 991px) {
     header {
         background: url("../images/header-top-bg.svg") no-repeat left center;
@@ -40,7 +50,19 @@
         margin-bottom: 40px;
     }
 
+    .workforce-right {
+        margin-top: 25%;
+    }
 }
-@media screen and (max-width: 767px) {
 
+@media screen and (max-width: 991px) and (min-width: 767px) {
+    .ed-programs .card-body h5{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .green-arrow {
+        display: none;
+    }
 }

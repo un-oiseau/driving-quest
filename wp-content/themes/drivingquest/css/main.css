@@ -291,6 +291,10 @@ header .header-logo {
     opacity: .5;
 }
 
+.student-reviews h5 {
+    margin-bottom: 0;
+}
+
 .student-reviews .card {
     background: #FFFFFF;
     border: 3px solid #FFFFFF;
@@ -299,6 +303,15 @@ header .header-logo {
     border-radius: 35px;
     min-height: 370px;
 }
+
+.student-reviews .card-top {
+    justify-content: flex-start;
+}
+
+.student-reviews .card-top .card-img {
+    width: 25%;
+}
+
 .student-reviews .card-body {
     padding: 38px 48px 40px;
 }
@@ -381,13 +394,13 @@ header .header-logo {
     color: #7780A6;
 }
 
-.wpcf7-form-control-wrap select,
-.wpcf7-form-control-wrap select:focus,
-.wpcf7-form-control-wrap select:focus-visible,
-.wpcf7-form-control-wrap select:focus-within {
+.find-form .wpcf7-form-control-wrap select,
+.find-form .wpcf7-form-control-wrap select:focus,
+.find-form .wpcf7-form-control-wrap select:focus-visible,
+.find-form .wpcf7-form-control-wrap select:focus-within {
     background: #0D1C93;
     border-radius: 8px;
-    border: none !important;
+    border: none;
     color: #ffffff;
 }
 
@@ -620,13 +633,170 @@ h2.new {
     text-align: center;
 }
 
+/* Submit Request */
+
+.submit-request {
+    font-family: 'Manrope Medium', sans-serif;
+    background: linear-gradient(180deg, #F4F5F8 0%, rgba(244, 245, 248, 0) 100%);
+    padding-top: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: #7780A6;
+}
+
+.submit-request h2 {
+    padding-bottom: 16px;
+}
+.submit-request h4 {
+    font-family: 'Manrope SemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    color: #7780A6;
+}
+
+.submit-request .form-control {
+    background: #EBEDF2;
+    border-radius: 8px;
+    padding: 9px 11px;
+}
+
+.submit-request .form-control:focus {
+    border: none;
+    box-shadow: none; 
+    /* color: #EBEDF2; */
+}
+
+.submit-request .form-label {
+    color: #7780A6;
+    font-family: 'Manrope Medium', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 25px;
+    color: #7780A6;
+    padding: 3px 0 5px;
+}
+
+.submit-request .wpcf7-form-control-wrap select,
+.submit-request .wpcf7-form-control-wrap select:focus,
+.submit-request .wpcf7-form-control-wrap select:focus-visible,
+.submit-request .wpcf7-form-control-wrap select:focus-within {
+    border: none;
+    color: #7780A6;
+}
+
+.submit-box {
+    padding: 19px 30px 26px;
+    background: #EDF4FF;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.wpcf7-form-control.has-spinner.wpcf7-submit.submit-btn {
+    border: none;
+}
+
+.submit-btn {
+    background: linear-gradient(180deg, #FE8335 0%, #FA593B 100%);
+    border-radius: 34px;
+    padding: 11px 23px 14px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(180deg, #FA593B 100%, #FE8335 0%); 
+}
+
+.form-check.radio-btns {
+    margin-top: 43px;
+    padding-left: 0;
+}
+
+.submit-request .wpcf7-list-item:first-child {
+    margin-left: 0;
+    margin-right: 62px;
+}
+
+.submit-warning {
+    font-family: 'Manrope Medium', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: #7780A6;
+    margin-bottom: 0;
+}
+
+.wpcf7-spinner {
+    display: none;
+}
 /* Enter workforce */
 
 .enter-workforce {
     background: #EDF4FF;
-    padding-top: 70px;
+    border-radius: 8px;
+    padding: 70px 0 80px;
+    overflow-y: hidden;
 }
 
+.workforce-left {
+    position: relative;
+}
+
+.workforce-img-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -48%;
+}
+
+.workforce-right h2 {
+    padding-bottom: 30px;
+    text-align: left;
+    font-family: 'Manrope ExtraBold', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 58px;
+    color: #222447;
+    max-width: 440px;
+}
+
+.workforce-right h4 {
+    font-family: 'Manrope ExtraBold', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 25px;
+    color: #222447;
+}
+
+.workforce-right p {
+    font-family: 'Manrope SemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 35px;
+    color: #7780A6;
+}
+
+.workforce-right .badge-1 {
+    margin-bottom: 30px;
+}
+
+.workforce-right .badge-1 ~ span {
+    font-family: 'Manrope ExtraBold', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 25px;
+    color: #1A2DAF;
+    padding-left: 21px;
+}
+
+.workforce-right .badge-2 {
+    padding-right: 54px;
+}
 
 /* Footer */
 

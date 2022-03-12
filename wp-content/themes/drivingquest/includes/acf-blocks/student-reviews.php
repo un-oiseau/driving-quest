@@ -15,8 +15,8 @@ $rev_block = get_field('review_block');
         <div class="col-lg-4">
             <div class="card align-items-md-center justify-content-md-center">
                 <div class="card-body">
-                    <div class="d-flex justify-content-start">
-                        <div class="w-25">
+                    <div class="card-top d-flex">
+                        <div class="card-img">
                             <?php $avatar = $review['avatar'] ;?>
                                 <?php if ($avatar) :  ?>
                                     <img src="<?php echo $avatar['url']; ?>" alt="<?php echo $avatar['alt']; ?>" title="<?php echo $avatar['title']; ?>">
