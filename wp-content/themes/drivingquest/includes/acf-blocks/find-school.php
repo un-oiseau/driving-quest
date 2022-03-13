@@ -19,11 +19,12 @@ if (!empty($block['className'])) {
                     <h2 class="text-center"><?php echo get_field('form_title');?></h2>
                     <div class="find-form">
                         <div class="container row align-items-center">
-                            <div class="col-lg-5">
+                            <div class="col-lg-6 col-md-12">
                                 <?php echo get_field( 'form' ); ?>
                             </div>
-                            <div class="col-lg-5 pt-4">
-                                <?php echo get_field('selected_value_display');?>
+                            <div class="col-lg-6 col-md-12 pt-4">
+                                <!-- <?php echo get_field('selected_value_display');?> -->
+                                <p class="selected-value"></p>
                             </div>
                         </div>
                     </div>

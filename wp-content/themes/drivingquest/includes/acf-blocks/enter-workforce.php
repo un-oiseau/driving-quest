@@ -9,16 +9,30 @@ if (!empty($block['className'])) {
     <div class="container">
         <div class="row">
             <div class="workforce-left col-lg-6">
+            <div class="workforce-img-bg">
+                <?php $img3 = get_field('image_background_1');?>
+                    <?php if ($img3 ) :  ?>
+                        <img src="<?php echo $img3 ['url']; ?>" alt="<?php echo $img3['alt']; ?>" title="<?php echo $img3['title']; ?>">
+                    <?php endif; ?>
+                <?php $img4 = get_field('image_background_2');?>
+                    <?php if ($img4 ) :  ?>
+                        <img src="<?php echo $img4 ['url']; ?>" alt="<?php echo $img4['alt']; ?>" title="<?php echo $img4['title']; ?>">
+                    <?php endif; ?>
+                <?php $img5 = get_field('image_background_3');?>
+                    <?php if ($img5 ) :  ?>
+                        <img src="<?php echo $img5 ['url']; ?>" alt="<?php echo $img5['alt']; ?>" title="<?php echo $img5['title']; ?>">
+                    <?php endif; ?>
+            </div>
                 <div class="workforce-img-1">
                     <?php $img1 = get_field('image_1');?>
                         <?php if ($img1 ) :  ?>
-                            <img src="<?php echo $img1 ['url']; ?>" alt="<?php echo $img1 ['alt']; ?>" title="<?php echo $img1['title']; ?>">
+                            <img src="<?php echo $img1 ['url']; ?>" alt="<?php echo $img1['alt']; ?>" title="<?php echo $img1['title']; ?>">
                         <?php endif; ?>
                 </div>
                 <div class="workforce-img-2">
                     <?php $img2 = get_field('image_2');?>
                         <?php if ($img2 ) :  ?>
-                            <img src="<?php echo $img2 ['url']; ?>" alt="<?php echo $img2 ['alt']; ?>" title="<?php echo $img2['title']; ?>">
+                            <img src="<?php echo $img2 ['url']; ?>" alt="<?php echo $img2['alt']; ?>" title="<?php echo $img2['title']; ?>">
                         <?php endif; ?>
                 </div>
             </div>

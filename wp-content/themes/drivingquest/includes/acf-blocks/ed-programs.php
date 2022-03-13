@@ -12,7 +12,7 @@ $single = get_field('how_it_works');
         <h2><?php echo get_field('title');?></h2>
         <h3><?php echo get_field('subtitle');?></h3>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-12">
                 <div class="card card-1">
                     <div class="card-cap w-100 text-center">
                         <?php $program1 = get_field('program_1');?>
@@ -38,7 +38,7 @@ $single = get_field('how_it_works');
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-12">
                 <div class="card card-2">
                     <div class="card-cap w-100 text-center">
                         <?php $program2 = get_field('program_2');?>
@@ -65,7 +65,7 @@ $single = get_field('how_it_works');
                 </div>
             </div>
             
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-12">
                 <div class="card card-3">
                     <div class="card-cap w-100 text-center">
                         <?php $program3 = get_field('program_3');?>

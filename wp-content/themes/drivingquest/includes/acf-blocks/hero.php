@@ -8,7 +8,7 @@ $video = get_field('video_button');
 
 <div class="<?php echo esc_attr($classname) ?>">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center justify-content-between">
             <div class="col-lg-6 cards">
                 <h2 class="new"><?php echo get_field('title_top');?></h2>
                 <h1 class=""><?php echo get_field('title_middle');?></h1>

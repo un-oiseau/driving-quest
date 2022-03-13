@@ -2,6 +2,11 @@
 
 }
 
+@media (max-width: 1055px) {
+    .container-small {
+        width: 100%;
+    }
+}
 @media (max-width: 1400px) {
 
     .student-reviews .card-top {
@@ -29,16 +34,42 @@
         flex-direction: column;
         align-items: center;
     }
+    .green-arrow {
+        top: -18vh;
+        z-index: 15;
+        left: -2vw;
+        width: 12%;
+    }
 }
+
+@media (max-width: 1500px) and (min-width: 1200px) {
+    .container-small {
+        width: 60%;
+    }
+}
+
 @media (max-width: 1200px) and (min-width: 992px) {
     .student-reviews .card {
         min-height: 531px;
+    }
+
+    .container-small {
+        width: 80%;
+    }
+
+    .el-1,
+    .el-2 {
+        max-width: 16rem;
+    }
+
+    .el-3 {
+        max-width: 9rem;
     }
 }
 
 @media screen and (max-width: 991px) {
     header {
-        background: url("../images/header-top-bg.svg") no-repeat left center;
+        background: url(../images/header-top-bg.svg) no-repeat center left;
     }
 
     .find-form .row {
@@ -53,16 +84,124 @@
     .workforce-right {
         margin-top: 25%;
     }
+
+    .student-reviews {
+        margin-top: 18rem;
+    }
+
+    .hero-img {
+        margin-top: 12rem;
+    }
+    .el-1 {
+        top: calc(100% + -8rem);
+        left: calc(50% - -3rem);
+        max-width: 13rem;
+        transform: rotate(15deg);
+    }
+
+    .el-2 {
+        position: absolute;
+        right: calc(16% + -3rem);
+        top: calc(100% + 29rem);
+        transform: rotate(311deg);
+        max-width: 12rem;
+    }
+
+    .el-3 {
+        position: absolute;
+        left: calc(50% - 8rem);
+        top: calc(100% + 31rem);
+    }
+    .el-4 {
+        position: absolute;
+        top: calc(100% + 1rem);
+        right: calc(50% + -16rem);
+        z-index: -3;
+    }
+    
+    .el-5 {
+        position: absolute;
+        top: calc(100% + 11rem);
+        right: calc(61% - 23rem);
+    }
+    
+    .el-6 {
+        position: absolute;
+        top: calc(100% + 7rem);
+        right: calc(61% - 23rem);
+    }
+    
+    .el-7 {
+        position: absolute;
+        top: calc(100% + 20rem);
+        right: calc(50% - 18rem);
+    }
+    
+    .el-8 {
+        position: absolute;
+        right: calc(50% - 15rem);
+        top: calc(100% + 24rem);
+    }
+    
+    .skills {
+        left: 1rem;
+        top: calc(100% + 43rem);
+    }
+    .license {
+        left: calc(50% - 7rem);
+        top: calc(100% + 5rem);
+    }
+
+    .workforce-img-bg {
+        z-index: initial;
+    }
+
+    .workforce-left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .workforce-img-1 {
+        position: absolute;
+        z-index: 3;
+    }
+
+    .workforce-right {
+        margin-top: 42rem;
+    }
+
+    .workforce-img-2 {
+        z-index: 5;
+        top: 18rem;
+    }
 }
 
 @media screen and (max-width: 991px) and (min-width: 767px) {
     .ed-programs .card-body h5{
         font-size: 16px;
     }
+    .ed-programs .row {
+        margin-right: calc(4.5 * var(--bs-gutter-x));
+        margin-left: calc(4.5 * var(--bs-gutter-x));
+    }
 }
 
 @media screen and (max-width: 767px) {
     .green-arrow {
         display: none;
+    }
+
+    .find-place {
+        padding: 56px 35px 47px;
+    }
+
+    .hero-img {
+        background: url(../images/header-bg.svg) no-repeat;
+        background-position: center bottom;
+    }
+
+    .ed-programs .row {
+        margin-right: calc(2.5 * var(--bs-gutter-x));
+        margin-left: calc(2.5 * var(--bs-gutter-x));
     }
 }
