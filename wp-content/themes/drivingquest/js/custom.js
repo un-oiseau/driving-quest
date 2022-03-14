@@ -4,7 +4,7 @@ jQuery( document ).ready(function($) {
   $(".selected-v").css("text-align", "center");
   $("#campus-list" ).change(function () {
     $(".selected-value").show();
-    var str = $("#campus-list").val();
+    let str = $("#campus-list").val();
     $(".selected-value" ).text( str );
     $(".campus-value").css("align-items", "center");
     $(".selected-v").css("text-align", "left");
@@ -13,11 +13,11 @@ jQuery( document ).ready(function($) {
 
 
 $('.display-card').first().show();
-$('.ed-card').click(function(e){
-  let id = $(this).data('target');
-  $('.display-card').fadeOut();
-  $(id).fadeIn();
-});
+  $('.ed-card').click(function(e){
+    let id = $(this).data('target');
+    $('.display-card').fadeOut();
+    $(id).fadeIn();
+  });
 });
 
 

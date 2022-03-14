@@ -502,8 +502,11 @@ h2.new {
     z-index: 15;
 }
 
+.ed-card {
+    cursor: pointer;
+}
 .ed-card:hover {
-    opacity: .5;
+    opacity: .7;
     transition: all ease-in .3s;
 }
 
@@ -519,11 +522,25 @@ h2.new {
 }
 
 .display-card-intro-cap {
-    background: linear-gradient(180deg, #FE8335 0%, #FA593B 100%);
     border-radius: 34px 34px 0px 0px;
     position: relative;
     max-width: 192px;
     max-height: 152px;
+}
+
+#d-card-1 .display-card-intro-cap {
+    background: linear-gradient(180deg, #FE8335 0%, #FA593B 100%);
+}
+
+#d-card-2 .display-card-intro-cap {
+    background: linear-gradient(271.59deg, #5393F3 -3.28%, #78C6FF 99.96%);
+}
+
+#d-card-3 .display-card-intro-cap {
+    background: linear-gradient(271.59deg, #53D8B0 -3.28%, #B3DE7D 99.96%);
+}
+#d-card-3 h5 {
+    padding: 10px 3px;
 }
 
 .display-card h5 {

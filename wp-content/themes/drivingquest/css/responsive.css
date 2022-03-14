@@ -204,9 +204,7 @@
         margin-right: calc(2.5 * var(--bs-gutter-x));
         margin-left: calc(2.5 * var(--bs-gutter-x));
     }
-}
-
-@media screen and (max-width: 500px) {
+    
     .display-card .row {
         margin-right: calc(1 * var(--bs-gutter-x));
         margin-left: calc(1 * var(--bs-gutter-x));
@@ -215,5 +213,9 @@
     .display-card .card-body {
         padding: 0.5rem 0.5rem;
     }
+}
+
+@media screen and (max-width: 500px) {
+
 }
 
