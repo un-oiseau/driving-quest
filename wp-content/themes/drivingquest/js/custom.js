@@ -1,23 +1,27 @@
-// $( "#country-list" )
-//   .change(function () {
-//     var str = "";
-//     $( "select option:selected" ).each(function() {
-//       str += $( this ).text() + " ";
-//     });
-//     $( ".selected-value" ).text( str );
-//   })
-//   .change();
 
-
-  $(document).ready(function(){
-    $( "#country-list" )
-    .change(function () {
-      var str = "";
-      $( "select option:selected" ).each(function() {
-        str += $( this ).text() + " ";
-      });
-      $( ".selected-value" ).text( str );
-    })
+jQuery( document ).ready(function($) {
+  $(".selected-value").hide();
+  $(".selected-v").css("text-align", "center");
+  $("#campus-list" ).change(function () {
+    $(".selected-value").show();
+    var str = $("#campus-list").val();
+    $(".selected-value" ).text( str );
+    $(".campus-value").css("align-items", "center");
+    $(".selected-v").css("text-align", "left");
+    $(".empty-value").hide();
   });
 
-  .change();
+
+$('.display-card').first().show();
+$('.ed-card').click(function(e){
+  let id = $(this).data('target');
+  $('.display-card').fadeOut();
+  $(id).fadeIn();
+});
+});
+
+
+
+
+
+

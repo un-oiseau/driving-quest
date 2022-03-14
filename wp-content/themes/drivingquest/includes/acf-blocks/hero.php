@@ -61,13 +61,13 @@ $video = get_field('video_button');
             </div>   
         </div>
         <div class="col-lg-6">
-                <div class="hero-img d-flex justify-content-center">
+            <div class="hero-img d-flex justify-content-center">
                 <?php 
                 $hero_image = get_field('header_image');
                 if( !empty( $hero_image ) ): ?>
                     <img src="<?php echo $hero_image['url']; ?>" alt="<?php echo $hero_image['alt']; ?>" title="<?php echo $hero_image['title']; ?>">
                 <?php endif; ?>
-                </div>
+            </div>
                 <?php $el1 = get_field('element_1');
                 if( !empty( $el1 ) ): ?>
                     <img class="el-1" src="<?php echo $el1['url']; ?>" alt="<?php echo $el1['alt']; ?>" title="<?php echo $el1['title']; ?>">

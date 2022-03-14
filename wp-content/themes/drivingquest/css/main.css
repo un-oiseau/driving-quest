@@ -160,6 +160,9 @@ h2.new {
     background-position: center bottom;
     position: relative;
 }
+.hero-img img {
+    border-bottom-right-radius: 28%;
+}
 
 .play-img {
     background: linear-gradient(180deg, #FE8335 0%, #FA593B 100%);
@@ -370,11 +373,13 @@ h2.new {
     opacity: .5;
 }
 
-
+.single-card {
+    position: relative;
+}
 
 .green-arrow {
     position: absolute;
-    top: -35%;
+    top: -10rem;
     z-index: 15;
     left: 0;
 }
@@ -495,6 +500,15 @@ h2.new {
     justify-content: center;
     display: block;
     z-index: 15;
+}
+
+.ed-card:hover {
+    opacity: .5;
+    transition: all ease-in .3s;
+}
+
+.display-card {
+    display: none;
 }
 
 .display-card-intro {

@@ -85,10 +85,6 @@
         margin-top: 25%;
     }
 
-    .student-reviews {
-        margin-top: 18rem;
-    }
-
     .hero-img {
         margin-top: 12rem;
     }
@@ -142,13 +138,17 @@
         right: calc(50% - 15rem);
         top: calc(100% + 24rem);
     }
+
+    .el-1, .el-2, .el-3, .el-4, .el-5, .el-6, .el-7, .el-8 {
+        display: none;
+    }
     
     .skills {
-        left: 1rem;
-        top: calc(100% + 43rem);
+        left: 4rem;
+        top: calc(100% + 3rem);
     }
     .license {
-        left: calc(50% - 7rem);
+        left: calc(50% - -2rem);
         top: calc(100% + 5rem);
     }
 
@@ -167,7 +167,7 @@
     }
 
     .workforce-right {
-        margin-top: 42rem;
+        margin-top: 38rem;
     }
 
     .workforce-img-2 {
@@ -205,3 +205,15 @@
         margin-left: calc(2.5 * var(--bs-gutter-x));
     }
 }
+
+@media screen and (max-width: 500px) {
+    .display-card .row {
+        margin-right: calc(1 * var(--bs-gutter-x));
+        margin-left: calc(1 * var(--bs-gutter-x));
+    }
+
+    .display-card .card-body {
+        padding: 0.5rem 0.5rem;
+    }
+}
+
