@@ -93,7 +93,7 @@ $d_cards = get_field('how_works');
         </div>
         </div>
     </div>
-    <div class="single-card container">
+    <div class="single-card container-md">
         <?php $arrow = get_field('arrow'); ?>
             <?php if ($arrow) :  ?>
                 <img class="green-arrow" src="<?php echo $arrow['url']; ?>" alt="<?php echo $arrow['alt']; ?>" title="<?php echo $arrow['title']; ?>">

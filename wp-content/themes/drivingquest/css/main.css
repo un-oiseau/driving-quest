@@ -204,6 +204,12 @@ h2.new {
     top: 14rem;
     left: calc(50% - 7rem);
 }
+
+.el-2 {
+    position: absolute;
+    right: calc(50% + -26rem);
+}
+
 .el-3 {
     position: absolute;
     right: calc(50% - 6rem);
@@ -311,6 +317,10 @@ h2.new {
     opacity: .5;
 }
 
+.student-reviews {
+    margin-top: 10rem;
+}
+
 .student-reviews h5 {
     margin-bottom: 0;
 }
@@ -375,6 +385,10 @@ h2.new {
 
 .single-card {
     position: relative;
+}
+
+.single-card.container-md {
+    width: 91%;
 }
 
 .green-arrow {
